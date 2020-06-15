@@ -1,7 +1,6 @@
 #!/bin/sh
 
 ruby() {
-  pwd
   cat /dcy-cli/yml/ruby.yml
 }
 
