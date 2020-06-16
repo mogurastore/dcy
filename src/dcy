@@ -1,5 +1,9 @@
 #!/bin/sh
 
+postgres() {
+  cat /dcy-cli/yml/postgres.yml
+}
+
 python() {
   cat /dcy-cli/yml/python.yml
 }
