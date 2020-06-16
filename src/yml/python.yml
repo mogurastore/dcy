@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  python:
+    image: python:3.8
+    volumes:
+      - .:${PWD}
+      - bin-data:/usr/local/bin
+      - pip-data:/usr/local/lib/python3.8/site-packages
+    working_dir: ${PWD}
+
+volumes:
+  bin-data:
+  pip-data:
