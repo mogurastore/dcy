@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    image: ruby
+    image: ruby:2.7
     volumes:
       - .:${PWD}
       - gem-data:/usr/local/bundle
