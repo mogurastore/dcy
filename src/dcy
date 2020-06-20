@@ -1,5 +1,11 @@
 #!/bin/sh
 
+list() {
+  echo postgres
+  echo python
+  echo ruby
+}
+
 postgres() {
   cat /dcy-cli/yml/postgres.yml
 }
