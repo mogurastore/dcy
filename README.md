@@ -2,5 +2,7 @@
 
 ```
 alias dcy="docker run --rm mogurastore/dcy"
-dcy ruby > docker-compose.yml
+
+dcy list
+dcy dump ruby > docker-compose.yml
 ```

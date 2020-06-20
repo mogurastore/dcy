@@ -1,21 +1,13 @@
 #!/bin/sh
 
+dump() {
+  cat /dcy-cli/yml/$1.yml
+}
+
 list() {
   echo postgres
   echo python
   echo ruby
-}
-
-postgres() {
-  cat /dcy-cli/yml/postgres.yml
-}
-
-python() {
-  cat /dcy-cli/yml/python.yml
-}
-
-ruby() {
-  cat /dcy-cli/yml/ruby.yml
 }
 
 $@
