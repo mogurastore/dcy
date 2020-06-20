@@ -4,6 +4,10 @@ dump() {
   cat /dcy-cli/yml/$1.yml
 }
 
+help() {
+  cat /dcy-cli/help.txt
+}
+
 list() {
   echo postgres
   echo python
