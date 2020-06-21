@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  clojure:
+    image: clojure
+    volumes:
+      - .:${PWD}
+      - ~/.m2:/root/.m2
+    working_dir: ${PWD}

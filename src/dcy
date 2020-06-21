@@ -9,6 +9,7 @@ help() {
 }
 
 list() {
+  echo clojure
   echo postgres
   echo python
   echo ruby
