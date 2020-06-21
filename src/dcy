@@ -9,10 +9,7 @@ help() {
 }
 
 list() {
-  echo clojure
-  echo postgres
-  echo python
-  echo ruby
+  cat /dcy-cli/list.txt
 }
 
 $@
