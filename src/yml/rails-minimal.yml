@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  rails:
+    image: ruby
+    command: bash -c "rm -f tmp/pids/server.pid && ./bin/rails s -b 0"
+    environment:
+      LANG: C.UTF-8
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:${PWD}
+      - gem-data:/usr/local/bundle
+    working_dir: ${PWD}
+
+volumes:
+  gem-data:

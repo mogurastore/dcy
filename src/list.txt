@@ -2,4 +2,5 @@ clojure
 django
 postgres
 python
+rails-minimal
 ruby
