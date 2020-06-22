@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  django:
+    image: python
+    command: python manage.py runserver 0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:${PWD}
+      - bin-data:/usr/local/bin
+      - pip-data:/usr/local/lib
+    working_dir: ${PWD}
+
+volumes:
+  bin-data:
+  pip-data:
