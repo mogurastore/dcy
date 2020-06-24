@@ -15,7 +15,10 @@ services:
   rails:
     <<: *base
     command: bash -c "rm -f tmp/pids/server.pid && ./bin/rails s -b 0"
+    depends_on:
+      - postgres
     environment:
+      DATABASE_URL: postgres://postgres@postgres
       LANG: C.UTF-8
       WEBPACKER_DEV_SERVER_HOST: webpacker
     ports:
@@ -28,7 +31,16 @@ services:
       WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
     ports:
       - "3035:3035"
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
 
 volumes:
   gem-data:
+  pg-data:
   yarn-data:
