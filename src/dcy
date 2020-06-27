@@ -9,7 +9,7 @@ help() {
 }
 
 list() {
-  cat /dcy-cli/list.txt
+  ls /dcy-cli/yml/ | xargs -I{} sh -c 'echo ${0%.*}' {}
 }
 
 $@

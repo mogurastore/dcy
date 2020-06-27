@@ -1,7 +1,0 @@
-clojure
-django
-postgres
-python
-rails-minimal
-rails
-ruby
