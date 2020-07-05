@@ -9,7 +9,14 @@ help() {
 }
 
 list() {
-  ls /dcy-cli/dump/ | xargs -I{} sh -c 'echo ${0%.*}' {}
+  echo dump
+  ls /dcy-cli/dump/ | xargs -I{} sh -c 'echo - ${0%.*}' {}
+  echo setup
+  ls /dcy-cli/setup/ | xargs -I{} sh -c 'echo - ${0%.*}' {}
+}
+
+setup() {
+  cat /dcy-cli/setup/$1.sh
 }
 
 $@
