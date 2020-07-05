@@ -3,7 +3,7 @@ version: "3.7"
 services:
   django:
     image: python
-    # command: bash -c "pip install django && django-admin startproject `basename ${PWD}` ."
+    # command: bash -c "pip install django && pip freeze > requirements.txt && django-admin startproject `basename ${PWD}` ."
     command: python manage.py runserver 0:8000
     ports:
       - "8000:8000"
