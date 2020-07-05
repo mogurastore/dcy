@@ -14,6 +14,7 @@ x-base: &base
 services:
   rails:
     <<: *base
+    # command: bash -c "gem i rails && rails new . -d postgresql -S"
     command: bash -c "rm -f tmp/pids/server.pid && ./bin/rails s -b 0"
     depends_on:
       - postgres
