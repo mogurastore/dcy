@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  dotnet:
+    image: mcr.microsoft.com/dotnet/core/sdk
+    volumes:
+      - .:${PWD}
+    working_dir: ${PWD}
