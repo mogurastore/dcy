@@ -4,6 +4,6 @@ services:
   clojure:
     image: clojure
     volumes:
-      - .:${PWD}
+      - .:/workspace
       - ~/.m2:/root/.m2
-    working_dir: ${PWD}
+    working_dir: /workspace

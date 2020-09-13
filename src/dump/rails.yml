@@ -6,10 +6,10 @@ x-base: &base
   # image: circleci/ruby:latest-node-browsers
   user: root
   volumes:
-    - .:${PWD}
+    - .:/workspace
     - gem-data:/usr/local/bundle
     - yarn-data:/usr/local/share/.cache/yarn
-  working_dir: ${PWD}
+  working_dir: /workspace
 
 services:
   rails:

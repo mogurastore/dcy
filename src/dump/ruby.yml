@@ -4,9 +4,9 @@ services:
   ruby:
     image: ruby
     volumes:
-      - .:${PWD}
+      - .:/workspace
       - gem-data:/usr/local/bundle
-    working_dir: ${PWD}
+    working_dir: /workspace
 
 volumes:
   gem-data:

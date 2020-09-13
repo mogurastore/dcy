@@ -4,5 +4,5 @@ services:
   node:
     image: node
     volumes:
-      - .:${PWD}
-    working_dir: ${PWD}
+      - .:/workspace
+    working_dir: /workspace

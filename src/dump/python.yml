@@ -4,10 +4,10 @@ services:
   python:
     image: python
     volumes:
-      - .:${PWD}
+      - .:/workspace
       - bin-data:/usr/local/bin
       - pip-data:/usr/local/lib
-    working_dir: ${PWD}
+    working_dir: /workspace
 
 volumes:
   bin-data:
