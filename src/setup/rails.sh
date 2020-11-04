@@ -1,4 +1,8 @@
 docker-compose run --rm rails sh -c "
   gem i rails
-  rails new . -d postgresql -S
 "
+
+echo
+echo Create a project with the following command
+echo docker-compose run --rm rails rails new .
+echo
