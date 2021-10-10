@@ -1,7 +1,7 @@
 # Usage
 
 ```
-alias dcy="docker run --rm mogurastore/dcy"
+alias dcy="docker run --rm ghcr.io/mogurastore/dcy"
 
 dcy help
 dcy list
