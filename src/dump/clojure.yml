@@ -5,5 +5,8 @@ services:
     image: clojure
     volumes:
       - .:/workspace
-      - ~/.m2:/root/.m2
+      - m2-data:/root/.m2
     working_dir: /workspace
+
+volumes:
+  m2-data:
