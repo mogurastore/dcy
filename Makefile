@@ -1,2 +1,2 @@
 build:
-	docker build . -t mogurastore/dcy
+	docker build . -t ghcr.io/mogurastore/dcy
