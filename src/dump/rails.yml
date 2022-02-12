@@ -4,14 +4,27 @@ services:
   rails:
     image: ruby
     command: sh -c "rm -f tmp/pids/server.pid && ./bin/rails s -b 0"
+    depends_on:
+      - postgres
     environment:
+      DATABASE_URL: postgres://postgres@postgres
       LANG: C.UTF-8
     ports:
       - "3000:3000"
+    tty: true
     volumes:
       - .:/workspace
       - gem-data:/usr/local/bundle
     working_dir: /workspace
+  postgres:
+    image: postgres:alpine
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
 
 volumes:
   gem-data:
+  pg-data:
