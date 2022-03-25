@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   dotnet:
     image: mcr.microsoft.com/dotnet/core/sdk

@@ -1,5 +1,3 @@
-version: "3.9"
-
 x-base: &base
   image: circleci/ruby:latest-node
   # for system test
