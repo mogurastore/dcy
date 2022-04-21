@@ -1,7 +1,0 @@
-usage: dcy <command> [<args>]
-
-where <command> is one of:
-    dump
-    help
-    list
-    setup
