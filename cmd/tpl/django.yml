@@ -1,0 +1,15 @@
+services:
+  django:
+    image: python
+    command: python manage.py runserver 0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/workspace
+      - bin-data:/usr/local/bin
+      - pip-data:/usr/local/lib
+    working_dir: /workspace
+
+volumes:
+  bin-data:
+  pip-data:

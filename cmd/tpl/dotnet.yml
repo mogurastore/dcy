@@ -1,0 +1,6 @@
+services:
+  dotnet:
+    image: mcr.microsoft.com/dotnet/core/sdk
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
