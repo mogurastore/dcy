@@ -1,0 +1,8 @@
+.devcontainer
+.git
+.github
+Dockerfile
+LICENSE
+Makefile
+README.md
+docker-compose.yml
