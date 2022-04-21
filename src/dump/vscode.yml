@@ -1,7 +1,0 @@
-services:
-  SERVICE_NAME:
-    volumes:
-      - vscode-cache:/root/.vscode-server/extensions
-
-volumes:
-  vscode-cache:
