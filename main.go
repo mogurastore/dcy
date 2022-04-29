@@ -1,6 +1,6 @@
 package main
 
-import "dcy/cmd"
+import "github.com/mogurastore/dcy/cmd"
 
 func main() {
 	cmd.Execute()

@@ -1,4 +1,4 @@
-module dcy
+module github.com/mogurastore/dcy
 
 go 1.17
 
