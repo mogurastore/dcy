@@ -16,7 +16,7 @@ services:
       - gem-data:/usr/local/bundle
     working_dir: /workspace
   postgres:
-    image: postgres:alpine
+    image: postgres
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
