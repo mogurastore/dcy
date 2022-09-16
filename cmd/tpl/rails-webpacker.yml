@@ -30,7 +30,7 @@ services:
     ports:
       - "3035:3035"
   postgres:
-    image: postgres:alpine
+    image: postgres
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
