@@ -46,4 +46,5 @@ func init() {
 	dumpCmd.AddCommand(buildSetupCmd("rails-postgres"))
 	dumpCmd.AddCommand(buildSetupCmd("rails-webpacker"))
 	dumpCmd.AddCommand(buildSetupCmd("ruby"))
+	dumpCmd.AddCommand(buildSetupCmd("rust"))
 }
