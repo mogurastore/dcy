@@ -34,6 +34,7 @@ func buildSetupCmd(s string) *cobra.Command {
 
 func init() {
 	rootCmd.AddCommand(dumpCmd)
+	dumpCmd.AddCommand(buildSetupCmd("bun"))
 	dumpCmd.AddCommand(buildSetupCmd("clojure"))
 	dumpCmd.AddCommand(buildSetupCmd("django"))
 	dumpCmd.AddCommand(buildSetupCmd("dotnet"))
